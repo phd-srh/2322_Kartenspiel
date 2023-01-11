@@ -27,7 +27,7 @@ public class Karte {
 
     // 2) Methoden / Operationen
     public void ziehen() {
-        System.out.println("ziehen");
+        System.out.println("ziehen -> erhalte: " + farbe + wert);
     }
 
     public void ausspielen() {
