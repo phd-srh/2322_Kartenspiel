@@ -7,16 +7,16 @@ public class Karte {
     public String format = "standard";
 
     public Karte() {
+        this(0);
         System.out.println("Neue Karte");
     }
 
     public Karte(int neuWert) {
-        wert = neuWert;
+        this(neuWert, "schwarz");
     }
 
     public Karte(int neuWert, String neuFarbe) {
-        wert = neuWert;
-        farbe = neuFarbe;
+        this(neuWert, neuFarbe, "standard");
     }
 
     public Karte(int neuWert, String neuFarbe, String neuFormat) {
