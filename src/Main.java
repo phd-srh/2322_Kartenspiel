@@ -6,6 +6,9 @@ public class Main {
 
         Karte[] kartendeck = { k1, k2 };
 
+//        k1.farbe = "rot";   // <- das soll nicht möglich sein!
+        // aber
+        System.out.println("k1 hat die Farbe: " + k1.getFarbe());
         kartendeck[0].ausspielen();
         kartendeck[1].ziehen();
     }
