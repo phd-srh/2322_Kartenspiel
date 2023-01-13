@@ -11,26 +11,26 @@ public class Karte {
         System.out.println("Neue Karte");
     }
 
-    public Karte(int neuWert) {
-        this(neuWert, "schwarz");
+    public Karte(int wert) {
+        this(wert, "schwarz");
     }
 
-    public Karte(int neuWert, String neuFarbe) {
-        this(neuWert, neuFarbe, "standard");
+    public Karte(int wert, String farbe) {
+        this(wert, farbe, "standard");
     }
 
-    public Karte(int neuWert, String neuFarbe, String neuFormat) {
-        wert = neuWert;
-        farbe = neuFarbe;
-        format = neuFormat;
+    public Karte(int wert, String farbe, String format) {
+        this.wert = wert;
+        this.farbe = farbe;
+        this.format = format;
     }
 
     // 2) Methoden / Operationen
     public void ziehen() {
-        System.out.println("ziehen -> erhalte: " + farbe + wert);
+        System.out.println("ziehen -> erhalte: " + this.farbe + this.wert);
     }
 
     public void ausspielen() {
-        System.out.println("spiele: " + farbe + wert);
+        System.out.println("spiele: " + this.farbe + this.wert);
     }
 }
