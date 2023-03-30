@@ -9,15 +9,6 @@ public class Karte {
     private String farbe;
     private String format = "standard";
 
-    public Karte() {
-        this(0);
-        System.out.println("Neue Karte");
-    }
-
-    public Karte(int wert) {
-        this(wert, "schwarz");
-    }
-
     public Karte(int wert, String farbe) {
         this(wert, farbe, "standard");
     }

@@ -7,6 +7,6 @@ public class Main {
 
         k2.ausspielen();
         a1.ausspielen();
-        a1.aussetzen();
+        //a1.aussetzen(); -- soll automatisch durch "ausspielen" geschehen
     }
 }

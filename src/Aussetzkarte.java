@@ -7,4 +7,10 @@ public class Aussetzkarte extends Karte {
     public void aussetzen() {
         System.out.println("Nächster Spieler muss aussetzen!");
     }
+
+    @Override
+    public void ausspielen() {
+        super.ausspielen();
+        aussetzen();
+    }
 }
